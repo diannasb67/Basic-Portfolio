@@ -1,57 +1,117 @@
-body { 
-    background-color: #efeee7; 
-    font-family: "Georgia", 'Times New Roman', Times, Serif;
-    color: #333333;
-    margin: 0; 
-    padding: 0; }
 
-header {
-    background-color: #333333; 
+
+html { height: 100%
 }
+
+body { 
+    background-color: #e6e6e6; 
+    display: flex;
+    flex-direction: column;
+    font-family: "Georgia", 'Times New Roman', Times, Serif;
+    margin: 0; 
+    padding: 0; 
+    height: 100%;
+}
+
+input[type=text], select {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #777777;
+}
+
+form {margin: 20px 0 20px 20px; 
+    font-family: "Arial", "Helvetica Neue", sans-serif;
+    color: #777777;
+
+}
+
+.mesbox { height: 200px; 
+}
+
+input[type=submit] {
+    width: 20%;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+
+}
+
+h2 { color: #4aaaa5;
+    margin-top: 20px;
+}   
+
+hr { display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px; 
+}
+
+p, a { color: #777777;
+        font-family: "Arial", 'Helvetica Neue', Arial, Helvetica, sans-serif
+    } 
+            
+
+.header {   height: 90px;
+    background-color: #ffffff;
+    border-bottom: solid 3px #cccccc;
+    }
 
 a:link { color: grey;  
          text-decoration: none;
-
  }
 a:visited { color:black;
             text-decoration: none;
 }
-
 a:hover { color: #4aaaa5;
           text-decoration: none;
 }
-
 a:active { color: black; 
            text-decoration: none;
 }
-
-h1 { color: #eee;
-    font-size: 28px; margin : 0; text-align: center; 
-        padding: 30px;
-}
-
-.nametag {  float: left; 
+    
+.nametag {  
     background-color: #4aaaa5;
-    padding: 10px;
+    padding: 39px 20px 27px 20px;
     color: white;
     font-family: "Georgia", 'Times New Roman', Times, serif;
-    font-size: 14pt;
-    margin-left: 30%; 
-    height: 50px;
+    font-size: 16pt;
+    margin-left: 20%;
+    margin-right: 60%;
     
-    
-         }
+               }
 
-.topnav  {  width: 100%;
+nav {   float: right;
+        padding: 30px;
+        font-size: 16px;
+        font-family: 'Georgia', 'Times New Roman', Times, serif;
+        color: #777777;
+        }
+nav a {text-decoration: none;
+            border-left: 1px solid #efefef;
+            padding: 30px; 
+        }
+        
+/* nav  {  width: 30%;
             height: 70px;
-            padding-top: 30px;  
+            padding: 10px;
             background-color: white; 
-            border: 1px solid;
-            float: right;        
-}
+            border-bottom: solid #cccccc;
+            float: right;
+            margin-right: 8%;
+            color: #777777;} */
 
-.active {   float: right;
-            padding: 10px; 
+.active {   padding: 10px; 
             }
 
 .nav { background-color: #d21034;
@@ -60,46 +120,42 @@ h1 { color: #eee;
 h2 { font-size: 24px; text-align: left; padding-left: 40px;
         }
 
-li {padding: 5px;
-}
 
 .container {
-    width: 1024px; 
-    margin-left: 30%; auto; 
-    clear: both;
-        } 
-
-#contact-info, #bio-image { 
-    float: left; 
-}
+    width: 960px; 
+    margin-left: 20%;
+    margin-bottom: 10%;
+    margin-top: 20px;  
+    height: auto;
+    
+    
+               } 
 
 #main-bio { background-color: #ffffff; 
-            margin-top: 5%; 
             align-content: center; 
             float: left; 
-            line-break: border: solid;
-            border: 2px solid #eee;
+            line-break: border solid;
+            width: 960px;
+            margin-top: 10px;
+            
 }
 
 #bio-image { 
     width: 200px; margin-right: 05%; 
     padding: 20px;
+    float: left; 
+    clear: both;    
+   
 }
 
-#main-bio {
-    width: 70%;  
+.wrapper { 
+    flex: 1 0 auto;
 }
+.footer {
+    flex-shrink: 0;
+    border-top: 8px solid #4aaaa5; 
+    background-color: #333333; 
+    height: 10%;
+  }
 
-#contact-info { 
-    width: 30%; 
-}
-
-a { 
-    color: #d21034; 
-}
-
-footer {    clear: both;
-            background-color: #333333;
-            height: 20px; 
-            position: bottom;
-         }
+  
